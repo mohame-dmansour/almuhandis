@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاريعنا | شركة المهندس للمقاولات العامة</title>
+    <meta name="description" content="أبرز مشروعات شركة المهندس للمقاولات العامة">
+    
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-social">
+                <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="top-info">
+                <a href="mailto:almohandsco@gmail.com"><i class="fas fa-envelope"></i><span>almohandsco@gmail.com</span></a>
+                <a href="tel:01029395709"><i class="fas fa-phone"></i><span>01029395709</span></a>
+                <a href="tel:01041199914"><i class="fas fa-phone"></i><span>01041199914</span></a>
+                <a href="tel:01041199912"><i class="fas fa-phone"></i><span>01041199912</span></a>
+                <a href="tel:01000074947"><i class="fas fa-phone"></i><span>01000074947</span></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="شركة المهندس للمقاولات العامة">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="projects.html" class="active">مشاريعنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <a href="en/projects.html" class="lang-btn">English</a>
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80');">
+        <div class="page-banner-overlay"></div>
+        <div class="container page-banner-content">
+            <h1>مشاريعنا</h1>
+            <p><a href="index.html">الرئيسية</a> / مشاريعنا</p>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <h2 class="section-title">أبرز مشروعاتنا</h2>
+            <p class="section-text">
+                نفذت الشركة عددًا كبيرًا من المشروعات في مختلف القطاعات، إليك بعضًا منها.
+            </p>
+
+            <!-- فلتر -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="oil">بترول</button>
+                <button class="filter-btn" data-filter="industrial">صناعي</button>
+                <button class="filter-btn" data-filter="government">حكومي</button>
+                <button class="filter-btn" data-filter="residential">سكني</button>
+                <button class="filter-btn" data-filter="commercial">تجاري</button>
+            </div>
+
+            <div class="projects-grid">
+
+                <div class="project-card" data-category="residential">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="مشروع سكني">
+                        <div class="project-overlay">
+                            <span class="project-tag">سكني</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>مجمع سكني - كفر الشيخ</h3>
+                        <p>مجمع سكني متكامل بمساحة 5000 م²، يشمل 40 وحدة سكنية بخدمات متكاملة.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="industrial">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80" alt="مشروع صناعي">
+                        <div class="project-overlay">
+                            <span class="project-tag">صناعي</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>منشأة صناعية - الإسكندرية</h3>
+                        <p>إنشاء مصنع بمساحة 12000 م² مع جميع الأعمال المدنية والإنشائية.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="oil">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1590986695247-5b1a5a8b5c1e?w=800&q=80" alt="مشروع بترولي">
+                        <div class="project-overlay">
+                            <span class="project-tag">بترول</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>مشروع بترولي - السويس</h3>
+                        <p>تنفيذ أعمال إنشائية لمحطة بترولية بأحدث المعايير الهندسية.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="برج تجاري">
+                        <div class="project-overlay">
+                            <span class="project-tag">تجاري</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>برج تجاري - القاهرة</h3>
+                        <p>برج إداري وتجاري مكون من 8 طوابق بمساحة إجمالية 3500 م².</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="government">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80" alt="مجمع حكومي">
+                        <div class="project-overlay">
+                            <span class="project-tag">حكومي</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>مجمع حكومي - كفر الشيخ</h3>
+                        <p>تنفيذ مبنى حكومي متعدد الطوابق بخدمات متكاملة.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="industrial">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="توسعات">
+                        <div class="project-overlay">
+                            <span class="project-tag">صناعي</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>مشروع توسعات - الدلتا</h3>
+                        <p>أعمال توسعات وتطوير لمنشأة قائمة بمساحة 6000 م².</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residential">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80" alt="فيلا">
+                        <div class="project-overlay">
+                            <span class="project-tag">سكني</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>فيلا خاصة - كفر الشيخ</h3>
+                        <p>تصميم وتنفيذ فيلا سكنية بمساحة 600 م² بتشطيبات فاخرة.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="commercial">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="مول تجاري">
+                        <div class="project-overlay">
+                            <span class="project-tag">تجاري</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>مول تجاري - المنصورة</h3>
+                        <p>إنشاء مول تجاري بمساحة 8000 م² يضم 60 محلًا تجاريًا.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <img src="images/logo.png" alt="المهندس" class="footer-logo">
+                <p>بداية الحلم 2012.. واليوم نبني المستقبل</p>
+            </div>
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="projects.html">مشاريعنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-map-marker-alt"></i> كفر الشيخ: الصوالحة بجوار مجارة الصوالحة</p>
+                <p><i class="fas fa-phone"></i> 01041199114</p>
+                <p><i class="fas fa-envelope"></i> almohandsco@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 شركة المهندس للمقاولات العامة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/201041199114" class="float-btn whatsapp-btn" target="_blank" title="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+        <span>تواصل عبر واتساب</span>
+    </a>
+    <a href="tel:01041199114" class="float-btn call-btn" title="اتصل الآن">
+        <i class="fas fa-phone-alt"></i>
+        <span>اتصل الآن</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

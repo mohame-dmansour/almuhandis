@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Al-Muhandis Contracting</title>
+    
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="en-page" dir="ltr">
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-social">
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="top-info">
+                <a href="mailto:almohandsco@gmail.com"><i class="fas fa-envelope"></i><span>almohandsco@gmail.com</span></a>
+                <a href="tel:01029395709"><i class="fas fa-phone"></i><span>01029395709</span></a>
+                <a href="tel:01041199914"><i class="fas fa-phone"></i><span>01041199914</span></a>
+                <a href="tel:01041199912"><i class="fas fa-phone"></i><span>01041199912</span></a>
+                <a href="tel:01000074947"><i class="fas fa-phone"></i><span>01000074947</span></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="../images/logo.png" alt="Al-Muhandis">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="../contact.html" class="lang-btn">العربية</a>
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80');">
+        <div class="page-banner-overlay"></div>
+        <div class="container page-banner-content">
+            <h1>Contact Us</h1>
+            <p><a href="index.html">Home</a> / Contact</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-text">
+                We are happy to hear from you. Don't hesitate to contact us for any inquiries or quote requests.
+            </p>
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Address</h3>
+                        <p><strong>Main Branch:</strong> Kafr El-Sheikh - Al-Sawalha next to Al-Sawalha Drain</p>
+                        <p><strong>Branch 1:</strong> Ishaka in front of Ishaka Central</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3>Phone Numbers</h3>
+                        <p><a href="tel:01000074947"><i class="fas fa-phone"></i> 01000074947</a></p>
+                        <p><a href="tel:01041199912"><i class="fas fa-phone"></i> 01041199912</a></p>
+                        <p><a href="tel:01041199914"><i class="fas fa-phone"></i> 01041199914</a></p>
+                        <p><a href="tel:01029395709"><i class="fas fa-phone"></i> 01029395709</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:almohandsco@gmail.com">almohandsco@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-share-alt"></i></div>
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-fb"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#" class="social-li"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                            <a href="#" class="social-ig"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="#" class="social-tt"><i class="fab fa-tiktok"></i> TikTok</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xxxxxxxx" method="POST">
+                        <h3>Send Us a Message</h3>
+
+                        <div class="form-group">
+                            <label>Full Name *</label>
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone" placeholder="01xxxxxxxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" name="subject" placeholder="Message subject">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message *</label>
+                            <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="map-container">
+                <h3>Our Location on Map</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.5!2d30.9!3d31.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDA2JzAwLjAiTiAzMMKwNTQnMDAuMCJF!5e0!3m2!1sen!2seg!4v1234567890"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <img src="../images/logo.png" alt="Al-Muhandis" class="footer-logo">
+                <p>The Dream Began in 2012.. Today We Build the Future</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Kafr El-Sheikh: Al-Sawalha next to Al-Sawalha Drain</p>
+                <p><i class="fas fa-phone"></i> 01041199114</p>
+                <p><i class="fas fa-envelope"></i> almohandsco@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Al-Muhandis General Contracting Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/201041199114" class="float-btn whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat on WhatsApp</span>
+    </a>
+    <a href="tel:01041199114" class="float-btn call-btn">
+        <i class="fas fa-phone-alt"></i>
+        <span>Call Now</span>
+    </a>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

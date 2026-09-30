@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | شركة المهندس للمقاولات العامة</title>
+    <meta name="description" content="تواصل مع شركة المهندس للمقاولات العامة">
+    
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-social">
+                <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="top-info">
+                <a href="mailto:almohandsco@gmail.com"><i class="fas fa-envelope"></i><span>almohandsco@gmail.com</span></a>
+                <a href="tel:01029395709"><i class="fas fa-phone"></i><span>01029395709</span></a>
+                <a href="tel:01041199914"><i class="fas fa-phone"></i><span>01041199914</span></a>
+                <a href="tel:01041199912"><i class="fas fa-phone"></i><span>01041199912</span></a>
+                <a href="tel:01000074947"><i class="fas fa-phone"></i><span>01000074947</span></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="شركة المهندس للمقاولات العامة">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="projects.html">مشاريعنا</a></li>
+                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <a href="en/contact.html" class="lang-btn">English</a>
+            <button class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-banner" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80');">
+        <div class="page-banner-overlay"></div>
+        <div class="container page-banner-content">
+            <h1>اتصل بنا</h1>
+            <p><a href="index.html">الرئيسية</a> / اتصل بنا</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <p class="section-text">
+                نحن سعداء بتواصلك معنا. لا تتردد في الاتصال بنا لأي استفسار أو طلب عرض سعر.
+            </p>
+
+            <div class="contact-grid">
+
+                <!-- معلومات التواصل -->
+                <div class="contact-info">
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>العنوان</h3>
+                        <p><strong>الفرع الرئيسي:</strong> كفر الشيخ - الصوالحة بجوار مجارة الصوالحة</p>
+                        <p><strong>فرع (1):</strong> اسحاقة أمام سنترال اسحاقة</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <h3>أرقام التواصل</h3>
+                        <p><a href="tel:01000074947"><i class="fas fa-phone"></i> 01000074947</a></p>
+                        <p><a href="tel:01041199912"><i class="fas fa-phone"></i> 01041199912</a></p>
+                        <p><a href="tel:01041199914"><i class="fas fa-phone"></i> 01041199914</a></p>
+                        <p><a href="tel:01029395709"><i class="fas fa-phone"></i> 01029395709</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>البريد الإلكتروني</h3>
+                        <p><a href="mailto:almohandsco@gmail.com">almohandsco@gmail.com</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-share-alt"></i></div>
+                        <h3>تابعنا على</h3>
+                        <div class="social-links">
+                            <a href="#" title="Facebook" class="social-fb"><i class="fab fa-facebook-f"></i> Facebook</a>
+                            <a href="#" title="LinkedIn" class="social-li"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                            <a href="#" title="Instagram" class="social-ig"><i class="fab fa-instagram"></i> Instagram</a>
+                            <a href="#" title="TikTok" class="social-tt"><i class="fab fa-tiktok"></i> TikTok</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- نموذج التواصل -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>أرسل لنا رسالة</h3>
+
+                        <div class="form-group">
+                            <label>الاسم بالكامل *</label>
+                            <input type="text" name="name" placeholder="اكتب اسمك هنا" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>البريد الإلكتروني *</label>
+                            <input type="email" name="email" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>رقم الهاتف</label>
+                            <input type="tel" name="phone" placeholder="01xxxxxxxxx">
+                        </div>
+
+                        <div class="form-group">
+                            <label>الموضوع</label>
+                            <input type="text" name="subject" placeholder="موضوع الرسالة">
+                        </div>
+
+                        <div class="form-group">
+                            <label>رسالتك *</label>
+                            <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- الخريطة -->
+            <div class="map-container">
+                <h3>موقعنا على الخريطة</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3418.5!2d30.9!3d31.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDA2JzAwLjAiTiAzMMKwNTQnMDAuMCJF!5e0!3m2!1sen!2seg!4v1234567890"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <img src="images/logo.png" alt="المهندس" class="footer-logo">
+                <p>بداية الحلم 2012.. واليوم نبني المستقبل</p>
+            </div>
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="about.html">عن الشركة</a></li>
+                    <li><a href="services.html">خدماتنا</a></li>
+                    <li><a href="projects.html">مشاريعنا</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>تواصل معنا</h3>
+                <p><i class="fas fa-map-marker-alt"></i> كفر الشيخ: الصوالحة بجوار مجارة الصوالحة</p>
+                <p><i class="fas fa-phone"></i> 01041199114</p>
+                <p><i class="fas fa-envelope"></i> almohandsco@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 شركة المهندس للمقاولات العامة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/201041199114" class="float-btn whatsapp-btn" target="_blank" title="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+        <span>تواصل عبر واتساب</span>
+    </a>
+    <a href="tel:01041199114" class="float-btn call-btn" title="اتصل الآن">
+        <i class="fas fa-phone-alt"></i>
+        <span>اتصل الآن</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

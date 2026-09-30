@@ -142,42 +142,58 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xxxxxxxx" method="POST">
-                        <h3>Send Us a Message</h3>
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xxxxxxxx" method="POST">
+        
+        <h3>اترك بياناتك، وسنتواصل معك.</h3>
+        <p class="form-desc">اختر الوقت الأنسب لك وأرسل طلبك إلى فريقنا مباشرة عبر واتساب.</p>
 
-                        <div class="form-group">
-                            <label>Full Name *</label>
-                            <input type="text" name="name" placeholder="Enter your name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Email *</label>
-                            <input type="email" name="email" placeholder="example@email.com" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Phone Number</label>
-                            <input type="tel" name="phone" placeholder="01xxxxxxxxx">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Subject</label>
-                            <input type="text" name="subject" placeholder="Message subject">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Message *</label>
-                            <textarea name="message" rows="5" placeholder="Write your message here..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn-primary btn-submit">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-
+        <div class="form-row">
+            <div class="form-group">
+                <label>الاسم الكامل</label>
+                <input type="text" name="name" placeholder="اكتب اسمك" required>
             </div>
+            <div class="form-group">
+                <label>رقم الهاتف</label>
+                <input type="tel" name="phone" placeholder="مثال: 01000074947" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>الوقت المناسب للتواصل</label>
+                <select name="time" required>
+                    <option value="">اختر الوقت</option>
+                    <option value="صباحاً (9 - 12)">صباحاً (9 - 12)</option>
+                    <option value="ظهراً (12 - 3)">ظهراً (12 - 3)</option>
+                    <option value="عصراً (3 - 6)">عصراً (3 - 6)</option>
+                    <option value="مساءً (6 - 9)">مساءً (6 - 9)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>الخدمة المطلوبة</label>
+                <select name="service" required>
+                    <option value="">اختر الخدمة</option>
+                    <option value="تنفيذ">تنفيذ</option>
+                    <option value="تصميم">تصميم</option>
+                    <option value="إشراف هندسي">إشراف هندسي</option>
+                    <option value="توريدات">توريدات</option>
+                    <option value="تسويق عقاري">تسويق عقاري</option>
+                    <option value="تطوير عقاري">تطوير عقاري</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>تفاصيل إضافية</label>
+            <textarea name="details" rows="5" placeholder="اكتب نبذة مختصرة عن احتياجك"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+            <i class="fas fa-arrow-left"></i>
+            إرسال طلب المعاودة
+        </button>
+    </form>
+</div>
 
             <div class="map-container">
                 <h3>Our Location on Map</h3>
